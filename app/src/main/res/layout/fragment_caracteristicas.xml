@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".caracteristicas"
+    >
+
+    <LinearLayout
+        android:id="@+id/base_trassp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_eage1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0B27D3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Heroe"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/cerrar"
+                    android:layout_width="4dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/close" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagen_heroe_unit"
+                        android:layout_width="398dp"
+                        android:layout_height="wrap_content"
+                        tools:src="@tools:sample/avatars" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  ID: "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            tools:text="0000" />
+
+                        <Space
+                            android:layout_width="99dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="name:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="152dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            tools:text="name" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="11dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="  Last update:"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/last_update"
+                            android:layout_width="328dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity=""
+                            android:textColor="#000000"
+                            tools:text="date" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="411dp"
+                        android:layout_height="11dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Description:"
+                        android:textColor="#000000"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/description_unit"
+                            android:layout_width="360dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            tools:text="desciption" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
